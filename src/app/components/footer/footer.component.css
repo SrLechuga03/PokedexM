@@ -1,0 +1,86 @@
+/* Estilo general del footer */
+footer {
+    border-top:solid 5px #202020;
+    background-color: #ff3434; 
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: solid 5px #202020;
+}
+
+
+.footer-info {
+    background-color: #202020; 
+    padding: 20px;
+    margin-bottom: 40px; 
+    border-radius: 10px; 
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 2px #ffcc00;
+}
+
+.footer-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Contenedor de las 3 columnas debajo de la información personal */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.footer-container > div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-info h2,
+.social-links h3,
+.regions h3,
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p,
+.social-links a,
+.regions li,
+.contact-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Enlaces a redes sociales */
+.social-links a {
+    display: block;
+    color: #ffcc00; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-links a:hover {
+    color: #ff9800;
+}
+
+/* Lista de regiones */
+.regions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.regions li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+
+.contact-info p {
+    font-size: 1rem;
+}
