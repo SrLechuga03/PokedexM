@@ -13,18 +13,6 @@ const app = express();
 const commonEngine = new CommonEngine();
 
 /**
- * Example Express Rest API endpoints can be defined here.
- * Uncomment and define endpoints as necessary.
- *
- * Example:
- * ```ts
- * app.get('/api/**', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
-
-/**
  * Serve static files from /browser
  */
 app.get(
@@ -64,4 +52,5 @@ if (isMainModule(import.meta.url)) {
   });
 }
 
-export default app;
+// Export the app as reqHandler for SSR.
+export { app as reqHandler };

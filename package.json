@@ -2,6 +2,9 @@
   "name": "pokedex-m",
   "version": "0.0.0",
   "scripts": {
+    
+  "build:ssr": "ng build --prod && ng run PokedexM:server",
+  "serve:ssr": "node dist/PokedexM/server/main.js",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

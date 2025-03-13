@@ -74,4 +74,11 @@ export class ListComponent implements OnInit{
     return text.charAt(0).toUpperCase() + text.slice(1);
   }
 
+  public getPokedexNumber(pokemon: Pokemon): string {
+    const urlSplitted = pokemon.url.split('/');
+    const id = urlSplitted[urlSplitted.length - 2]; // Extrae el ID de la URL
+    return id;
+  }
+  
+
 }

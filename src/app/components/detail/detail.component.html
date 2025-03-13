@@ -6,7 +6,7 @@
       <a *ngIf="id < 1025" href="{{ goNext() }}" class="button next-button">Siguiente</a>
     </div>
     
-    <div class="detail-image image-container ">
+    <div class="detail-image image-container gifs ">
       <img src="{{getImageByPokemon(pokemon)}}" alt="Frontal">
       <img src="{{getImageByPokemon(pokemon, true)}}" alt="Shiny">
     </div>
@@ -24,26 +24,13 @@
         <strong>Peso: </strong>{{pokemon.weight}} 
     </div>
 
-    <h2>Marcas</h2>
-
-    <div class="checkbox-container">
-      <label class="custom-checkbox">
-        <input type="checkbox" [checked]="specie.isLegend" />
-        Es Legendario 
-        <span class="checkmark"></span>
-      </label>
-      <label class="custom-checkbox">
-        <input type="checkbox" [checked]="specie.isSingular" />
-        Es Singular
-        <span class="checkmark"></span>
-      </label>
-    </div>
+    
 
     <h2>Sonidos</h2>
     <div class="audio-player">
       <audio #audioPlayer controls>
         <source src="{{cries}}" type="audio/ogg" />
-        <p>Your browser does not support the audio element.</p>
+        <p>YoTu navegador no soporta este elemento de audio</p>
       </audio>
     </div>
 

@@ -1,23 +1,22 @@
 /* Estilo general del footer */
 footer {
-    border-top:solid 5px #202020;
-    background-color: #ff3434; 
+    border-top: solid 5px #202020;
+    background-color: #ff3434;
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: solid 5px #202020;
 }
 
-
+/* Información personal del footer */
 .footer-info {
-    background-color: #202020; 
+    background-color: #202020;
     padding: 20px;
-    margin-bottom: 40px; 
-    border-radius: 10px; 
+    margin-bottom: 40px;
+    border-radius: 10px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    border:solid 2px #ffcc00;
+    border: solid 2px #ffcc00;
 }
 
 .footer-info p {
@@ -25,41 +24,32 @@ footer {
     margin: 5px 0;
 }
 
-/* Contenedor de las 3 columnas debajo de la información personal */
+/* Contenedor de las columnas */
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
+/* Cada sección del footer */
 .footer-container > div {
     width: 30%;
     margin-bottom: 20px;
 }
 
-.footer-info h2,
-.social-links h3,
-.regions h3,
-.contact-info h3 {
+/* Títulos */
+.footer-container h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.footer-info p,
-.social-links a,
-.regions li,
-.contact-info p {
-    font-size: 1rem;
-    margin: 5px 0;
-}
-
-/* Enlaces a redes sociales */
+/* Estilo de los enlaces */
 .social-links a {
     display: block;
-    color: #ffcc00; 
+    color: #ffcc00;
     text-decoration: none;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -80,7 +70,38 @@ footer {
     margin-bottom: 8px;
 }
 
-
+/* Información de contacto */
 .contact-info p {
     font-size: 1rem;
+}
+
+/* 📱 Responsivo: Tablets (menos de 768px) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer-container > div {
+        width: 45%;
+        text-align: center;
+    }
+}
+
+/* 📱 Responsivo: Móviles (menos de 480px) */
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container > div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-info p {
+        font-size: 1rem;
+    }
 }

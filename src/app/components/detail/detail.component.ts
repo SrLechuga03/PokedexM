@@ -67,8 +67,6 @@ export class DetailComponent implements OnInit{
             const specie: Specie = data;
             specie.name = this.getNameByLanguage(data.names, 'es');
             specie.desc = this.getDescByLanguage(data.flavor_text_entries, 'es');
-            specie.isLegend = data.is_legendary;
-            specie.isSingular = data.is_mythical;
             this.specie = specie;
           }
         );
@@ -164,11 +162,11 @@ export class DetailComponent implements OnInit{
   }
 
   getImageByPokemon(pokemonDetail: PokemonDetail, shiny: boolean = false){
-    let urlImage: string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
+    let urlImage: string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/";
     if(shiny){
       urlImage += "shiny/"
     }
-    return urlImage + pokemonDetail?.id + ".png";
+    return urlImage + pokemonDetail?.id + ".gif";
   }
 
   capitalizeFirstLetter(text: string ): string {
