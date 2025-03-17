@@ -1,59 +1,59 @@
-# PokedexM
+# 🌟 PokédexM - Tu Pokédex en Angular 🌟
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+Bienvenido a **PokédexM**, una aplicación web desarrollada en **Angular** que te permite explorar los Pokémon de manera rápida y eficiente. Con un diseño limpio y una carga optimizada, esta Pokédex es ideal para cualquier entrenador que quiera obtener información sobre sus criaturas favoritas.
 
-## Development server
+## 📈 Características principales
+- 💀 **Listado de Pokémon** con imágenes y detalles clave.
+- 🔍 **Búsqueda rápida** (próximamente).
+- 📃 **Paginación optimizada** para explorar sin demoras.
+- 🔍 **Detalles individuales** con sprites animados.
+- ✨ **Diseño moderno y minimalista**.
 
-To start a local development server, run:
+## 🌟 Pros y contras
 
-```bash
-ng serve
-```
+### ✅ Pros:
+✅ La interfaz es limpia, bonita y fácil de usar.
+✅ La carga de los Pokémon es muy rápida.
+✅ La navegación es fluida y bien estructurada.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### ⚠️ Contras:
+❌ Falta la opción de buscar por nombre, tipo o número de Pokédex.
+❌ No se pueden marcar Pokémon como favoritos (aún).
 
-## Code scaffolding
+## 🛠️ Retos en el desarrollo
+El mayor desafío de este proyecto ha sido **mostrar correctamente las imágenes de los Pokémon y optimizar la paginación**. Inicialmente, usé **Angular Material**, pero la carga era demasiado lenta. Tras varias pruebas y optimizaciones, logré una versión mucho más eficiente.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🎯 Tecnologías utilizadas
+- **Angular** (framework principal)
+- **PokéAPI** (fuente de datos)
+- **TypeScript** (tipado y organización del código)
+- **CSS3** (diseño y estilos)
 
-```bash
-ng generate component component-name
-```
+## 📚 Instalación y uso
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/pokedexm.git
+   ```
+2. Entra en el directorio del proyecto:
+   ```bash
+   cd pokedexm
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Ejecuta el proyecto:
+   ```bash
+   ng serve
+   ```
+5. Abre el navegador y accede a `http://localhost:4200/`.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 💪 Mejoras futuras
+- ⭐️ Implementar un **buscador** para encontrar Pokémon por nombre, tipo o número.
+- 💟 Agregar una sección de **favoritos** para marcar Pokémon preferidos.
+- ⚡ Mejorar la interacción y la experiencia de usuario con animaciones.
 
-```bash
-ng generate --help
-```
+---
+Hecho con ❤️ por Mario Moreno
 
-## Building
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
